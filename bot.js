@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.say('yes');
+    	say.reply('yes');
   	}
 });
 
