@@ -10,4 +10,4 @@ async def Msay(ctx, *args):
     await Mike.delete_message(ctx.message)
     return await Mike.say(yes)
 
-Kay.run(Token)
+Kay.run(NDM5MjE4MjQ3NTExMDQ4MTk5.DdJc1A.6aBWUqOODkXZGnkSrefP7CQC_Q0)
