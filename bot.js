@@ -1,13 +1,15 @@
-import asyncio
-import discord
-from discord.ext.commands import Bot
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-Kay = Bot(',')
+client.on('ready', () => {
+    console.log('I am ready!');
+});
 
-@Kay.command(pass_context = True)
-async def Msay(ctx, *args):
-    mesg = 'ping'.join(args)
-    await Mike.delete_message(ctx.message)
-    return await Mike.say(yes)
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('yes');
+  	}
+});
 
-Kay.run(NDM5MjE4MjQ3NTExMDQ4MTk5.DdJc1A.6aBWUqOODkXZGnkSrefP7CQC_Q0)
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
