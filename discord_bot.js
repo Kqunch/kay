@@ -125,15 +125,15 @@ commands = {
 				if(typeof a === 'string')
 					text += a + " ";
 			}
-			msg.channel.send(text);
+			msg.channel.send(yes);
 		}
 	},
-    "ping": {
-        description: "responds pong, useful for checking if bot is alive",
+    "string": {
+        description: "responds yes, useful for checking if bot is alive",
         process: function(bot, msg, suffix) {
-            msg.channel.send( msg.author+" pong!");
+            msg.channel.send( msg.author+" yes");
             if(suffix){
-                msg.channel.send( "note that !ping takes no arguments!");
+                msg.channel.send( "note that !yes");
             }
         }
     },
@@ -152,14 +152,14 @@ commands = {
 	}
     },
     "say": {
-        usage: "<message>",
+        usage: "<yes>",
         description: "bot says message",
-        process: function(bot,msg,suffix){ msg.channel.send(suffix);}
+        process: function(bot,msg,suffix){ msg.channel.send(yes);}
     },
 	"announce": {
         usage: "<message>",
         description: "bot says message with text to speech",
-        process: function(bot,msg,suffix){ msg.channel.send(suffix,{tts:true});}
+        process: function(bot,msg,suffix){ msg.channel.send(yes,{tts:true});}
     },
 	"msg": {
 		usage: "<user> <message to leave user>",
