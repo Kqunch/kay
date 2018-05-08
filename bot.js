@@ -5,17 +5,13 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', function (user, userID, channelID, message, evt) {
-    if(message.content (0, 1) == '!') {
-    	 args = args.splice(1);
-        switch(cmd) {
-            // !ping
-            case 'ping':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Pong!'
-                });
-
+client.on('message', message => {
+    if(message.content === 'ping') {
+    	client.sendMessage({
+            to:channel1ID
+            message:'yes'
+  	}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
