@@ -6,10 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if(message.content === 'ping') {
-    	client.sendMessage({
-            to:channel1ID
-            message:'yes'
+   if (message.content === 'string') {
+    	send('yes');
   	}
 });
 
