@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
    if (message.content === 'string') {
-    	send:'yes';
+    	message.answer('yes');
   	}
 });
 
