@@ -7,7 +7,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'string') {
-    	send.say('yes');
+         bot.sendMessage({
+         to: channelID,
+    	message:'yes'
   	}
 });
 
